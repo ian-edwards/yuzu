@@ -17,8 +17,8 @@
                 "YUZU_PORT": "3000"
             },
             "serverReadyAction": {
-                "pattern": "yuzu listening http://localhost:([0-9]+)",
-                "uriFormat": "http://localhost:%s",
+                "pattern": "yuzu listening http://localhost:([0-9]+)/yuzu",
+                "uriFormat": "http://localhost:%s/yuzu",
                 "action": "openExternally"
             }
         }
