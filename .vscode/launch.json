@@ -14,13 +14,13 @@
             "program": "${workspaceFolder}/app.mjs",
             "env": {
                 "YUZU_HOSTNAME": "localhost",
-                "YUZU_PORT": "3001"
+                "YUZU_PORT": "3000"
             },
             "serverReadyAction": {
-                "pattern": "yuzu listening port:([0-9]+)",
+                "pattern": "yuzu listening http://localhost:([0-9]+)",
                 "uriFormat": "http://localhost:%s",
                 "action": "openExternally"
-              }
+            }
         }
     ]
 }

@@ -2,6 +2,9 @@
 import * as http from 'http'
 import * as url from 'url'
 
+const hostname = process.env.YUZU_HOSTNAME
+const port = process.env.YUZU_PORT
+
 import { helloTools } from './tools.mjs'
 
 http.createServer((req, res) => {
@@ -11,8 +14,8 @@ http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify({
-    seed: seed
+    seed: "workin?"
   }));
-}).listen(process.env.YUZU_PORT, process.env.YUZU_HOSTNAME, () => {
-    console.log(`yuzu listening port:${process.env.YUZU_PORT} hostname:${process.env.YUZU_HOSTNAME}...`);
+}).listen(port, hostname, () => {
+    console.log(`yuzu listening http://${hostname}:${port}`);
 });

@@ -4,9 +4,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "yuzu publish",
+            "label": "yuzu: publish",
+            "detail": "publish yuzu to remote",
             "type": "shell",
-            "command": "./yuzu-publish.sh",
+            "command": "./scripts/publish.sh",
             "problemMatcher": []
         }
     ]
