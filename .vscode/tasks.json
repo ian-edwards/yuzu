@@ -8,6 +8,12 @@
             "detail": "publish yuzu to remote",
             "type": "shell",
             "command": "./scripts/publish.sh",
+            "linux": {
+                "command": "./scripts/publish.sh"
+            },
+            "windows": {
+                "command": "./scripts/publish.cmd"
+            },
             "problemMatcher": []
         }
     ]

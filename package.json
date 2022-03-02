@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ian-edwards/yuzu/issues"
   },
-  "homepage": "https://github.com/ian-edwards/yuzu#readme"
+  "homepage": "https://github.com/ian-edwards/yuzu#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }

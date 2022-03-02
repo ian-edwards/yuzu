@@ -6,7 +6,7 @@ const hostname = process.env.YUZU_HOSTNAME
 const port = process.env.YUZU_PORT
 
 app.get('/yuzu', (req, res) => {
-  res.send('hello yuzu')
+  res.send('hello yuzu published')
 })
 
 app.listen(port, hostname, () => {
